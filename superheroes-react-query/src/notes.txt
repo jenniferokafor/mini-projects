@@ -1,0 +1,8 @@
+to - do
+1. create a new page that will eventually display the details of a single superhero
+2. configure the route to that page and add a link from the superheroes list page to the super heroes detail page.
+3. fetch a superhero by ID and display the details in the ui.
+
+
+to run db:
+npm run serve-json
