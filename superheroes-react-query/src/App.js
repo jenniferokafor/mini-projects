@@ -1,12 +1,11 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { QueryClientProvider, QueryClient } from "react-query";
-import { ReactQueryDevtools } from 'react-query/devtools'
-import Views from './Views';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { QueryClientProvider, QueryClient } from "react-query"
+import { ReactQueryDevtools } from "react-query/devtools"
+import Views from "./Views"
 
-import './App.css';
+import "./App.css"
 
 function App() {
-
   const queryClient = new QueryClient()
 
   return (
@@ -14,9 +13,9 @@ function App() {
       <BrowserRouter>
         <Views />
       </BrowserRouter>
-      <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
-  );
+  )
 }
 
-export default App;
+export default App
